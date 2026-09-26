@@ -210,7 +210,7 @@ public class MainActivity extends Activity {
         rail32Out.setText(money(r32));
         bannerOut.setText(money(banner));
         // Banner output is shared visually; put the same banner price into both columns.
-        ((TextView)((View)bannerOut).getParent()).getChildAt(2).setText(money(banner));
+       ((TextView)((LinearLayout)((View)bannerOut).getParent()).getChildAt(2)).setText(money(banner));
         total34Out.setText(money(t34));
         total32Out.setText(money(t32));
         installOut.setText(money(install));
